@@ -2,6 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from "@material-ui/icons/Create"
+import SidebarOption from './SidebarOption';
+import { Apps, BookmarkBorder, Drafts, ExpandLess, FileCopy, Inbox, InsertComment, PeopleAlt } from '@material-ui/icons';
 
 function Sidebar() {
     return (
@@ -16,6 +18,17 @@ function Sidebar() {
                 </SidebarInfo>
                 <CreateIcon />
             </SidebarHeader>
+
+            <SidebarOption Icon={InsertComment} title="Threads"/>
+            <SidebarOption Icon={Inbox} title="Mentions & reactions"/>
+            <SidebarOption Icon={Drafts} title="Saved Items"/>
+            <SidebarOption Icon={BookmarkBorder} title="Channel browser"/>
+            <SidebarOption Icon={PeopleAlt} title="People & user groups"/>
+            <SidebarOption Icon={Apps} title="Apps"/>
+            <SidebarOption Icon={FileCopy} title="File browser"/>
+            <SidebarOption Icon={ExpandLess} title="Show less"/>
+
+
         </SidebarContainer>
     )
 }
