@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import { Avatar } from "@material-ui/core";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import SearchIcon from "@material-ui/icons/Search";
 
 function Header() {
     return <HeaderContainer>
@@ -14,12 +15,37 @@ function Header() {
         </HeaderLeft>
 
         {/* Header Search */}
+        <HeaderSearch>
+            <SearchIcon />
+            <input placeholder="Search the Chat"/>
+        </HeaderSearch>
 
         {/* Header Right */}
     </HeaderContainer>
 }
 
-export default Header
+export default Header;
+
+const HeaderSearch = styled.div`
+    flex: 0.4;
+    opacity: 1;
+    border-radius: 6px;
+    border-color: #421f44;
+    text-align: center;
+    display: flex;
+    padding: 0 50px;
+    color: grey;
+    border: 1px grey solid;
+
+    > input {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        min-width: 30vw;
+        outline: 0;
+        color: white;
+    }
+`;
 
 const HeaderContainer = styled.div`
     display: flex;
