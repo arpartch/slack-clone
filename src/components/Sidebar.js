@@ -3,7 +3,7 @@ import styled from "styled-components";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from "@material-ui/icons/Create"
 import SidebarOption from './SidebarOption';
-import { Apps, BookmarkBorder, Drafts, ExpandLess, FileCopy, Inbox, InsertComment, PeopleAlt } from '@material-ui/icons';
+import { Add, Apps, BookmarkBorder, Drafts, ExpandLess, ExpandMore, FileCopy, Inbox, InsertComment, PeopleAlt } from '@material-ui/icons';
 
 function Sidebar() {
     return (
@@ -27,7 +27,10 @@ function Sidebar() {
             <SidebarOption Icon={Apps} title="Apps"/>
             <SidebarOption Icon={FileCopy} title="File browser"/>
             <SidebarOption Icon={ExpandLess} title="Show less"/>
-
+            <hr />
+            <SidebarOption Icon={ExpandMore} title="Channels"/>
+            <hr />
+            <SidebarOption Icon={Add} addChannelOption title="Add Channel"/>
 
         </SidebarContainer>
     )
@@ -43,6 +46,12 @@ const SidebarContainer = styled.div`
     border-top: 1px solid #49274b;
     max-width: 260px;
     margin-top: 60px;
+
+    > hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #49274b
+    }
 `;
 
 
