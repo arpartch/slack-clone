@@ -40,6 +40,6 @@ Install my-project with npm
     
 ## Screenshots
 
-![App Preview](../src/images/slack_app.png)
+![App Preview](./src/images/slack_app.png)
 
   
