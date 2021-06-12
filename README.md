@@ -12,7 +12,7 @@ Full stack slack clone.  This web application hosted on  React.JS uses Redux, st
   
 ## Authors
 
-- [@karpartch](https://www.github.com/arpartch)
+- [@arpartch](https://www.github.com/arpartch)
 
   
 ## Demo
@@ -40,6 +40,6 @@ Install my-project with npm
     
 ## Screenshots
 
-![App Preview](./src/images/slack_app.png)
+![App Preview](./images/slack_app.png)
 
   
